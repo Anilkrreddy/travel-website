@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <script src="script.js" defer></script>
+            <link rel = "stylesheet" href="style.css">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg  ">
+        <a class="navbar-brand" href="#"><img src="https://cdn3.iconfinder.com/data/icons/education-business-part-3/513/77-512.png"id="logoimage">ANR
+          Travelo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#home"><i class="bi bi-house" id="home"></i>Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#booking-info"><i class="bi bi-cart-fill"></i>Book</a>
+              </li>
+              <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Packages
+                </a>
+                <div class="dropdown-menu" id="pack">
+                  <a class="dropdown-item" href="#">India</a>
+                  <a class="dropdown-item" href="#">Egypt</a>
+                  <a class="dropdown-item" href="#">Canada </a>
+                  <a class="dropdown-item" href="#">Australia</a>
+                  <a class="dropdown-item" href="#">United States of America </a>
+                  <a class="dropdown-item" href="#">Germany </a>
+                  <a class="dropdown-item" href="#">Japan </a>
+                  <a class="dropdown-item" href="#">Indonesia </a>
+                  <a class="dropdown-item" href="#">NewYork </a>
+
+
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#services">Services</a>
+              </li><li class="nav-item">
+                  <a class="nav-link " href="#Gallery">Gallery</a>
+                </li><li class="nav-item">
+                  <a class="nav-link" href="#aboutus"></i>About</a>
+                </li>
+            </ul>
+            <button class="btn btn-success" id="login-btn" data-toggle="modal" data-target="#loginModal">Login</button> &nbsp;
+            <button class="btn btn-success" id="register-btn" data-toggle="modal" data-target="#registerModal" ><i class="bi bi-box-arrow-in-right"></i>Register</button>  
+            </button>
+     
+                      <!-- end of form -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content registration-modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Register form -->
+                  <form id="registerForm">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="firstname">First Name</label>
+                          <input type="text" class="form-control" id="firstname" placeholder="Enter first name">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="lastname">Last Name</label>
+                          <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="contact">Contact</label>
+                          <input type="text" class="form-control" id="contact" placeholder="Enter contact number">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="confirmPassword">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="dob">Date of Birth</label>
+                          <input type="date" class="form-control" id="dob">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="gender">Gender</label>
+                          <select class="form-control" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add more rows with fields as needed -->
+          
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    <!-- Link to login page -->
+                    <p>Already have an account? <a href="#" id="loginLink" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Login Modal -->
+          <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Login form -->
+                  <form id="loginForm">
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" id="email-id" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password-id" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <!-- Link to register page -->    
+                    <p>Don't have an account?  <a href="#" id="signupLink" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Sign Up</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        
+        <div class="imgbody "  id="hero">
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <h2 class="display-4">Welcome to ANR Travelo</h2>
+                <h1>Visit Place <span id="changetext"></span></h1>
+             <button    class="btn btn-info">book now</button></div>
+        </div> <br>
+        <br>
+        <br>
+        <!-- start of page2 -->
+        
+                 
+                   
+                 
+        <!-- start of page2 -->
+    <section id="page2">
+      <div id="bookings">
+        <div class="brand-logo">
+          <img src="https://www.wallpaperflare.com/static/189/104/965/earth-world-tour-illustration-wallpaper.jpg" alt="" />
+
+        </div>
+        <div class="booking-info" id="booking-info">
+          <form id="bookingForm" class="form">
+            <select class="form-select first-input" id="location" required>  <option value="">Select where you want to go</option>
+              <option value="India">India</option>
+              <option value="Egypt">Egypt</option>
+              <option value="France">France</option>
+              <option value="Australia">Australia</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Germany">Germany</option>
+              <option value="Japan">Japan</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="NewYork">NewYork</option>
+            </select>
+        
+            <label for="guests" required>How many people</label>
+            <input type="number" id="guests" name="guests" min="1" maxlength="50" required>
+        
+            <label for="start">Start date</label>
+            <input class="fourth-input" type="date" id="start" name="startDate" min="<?php echo date('Y-m-d'); ?>" required>
+        
+            <label for="end">End date</label>
+            <input class="third-input" type="date" id="end" name="endDate" required>
+        
+            <div class="form-floating">
+              <label for="floatingTextarea">Description</label>
+              <textarea class="form-control fifth-input" placeholder="Leave a comment here" id="floatingTextarea" rows="3" minlength="50" maxlength="500" required></textarea>
+            </div>
+        
+           
+              <button type="submit" class="book-btn" onclick="return validateForm()">Book Now</button>
+
+            
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end of page2 -->
+    <!-- end of page2 -->
+    <br>
+    <br>
+        <h1 class=" text-center " >Packages</h1> <hr class="hr">
+        <br>
+        <br>
+       
+                <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top"  src="https://images.unsplash.com/photo-1565505204576-1cc4b41662eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Taj Mahal</h5>
+              <p class="card-text">ivory-white marble mausoleum on the right bank of the river Yamuna.It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan (r. 1628–1658) to house the tomb of his beloved wife, Mumtaz Mahal</p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+               </div>
+               <h4>Price:$1000</h4>
+               <button class =" btn btn-warning ">Book Now</button>
+              <p class="footer"><small class="text-muted">Last updated  45 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top"  src="https://journeyz.co/wp-content/uploads/2019/09/The-Great-Pyramids-of-Giza-1536x1025.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Egyptian pyramids</h5>
+              <p class="card-text">ancient masonry structures located in Egypt.Sources cite at least 118 identified "Egyptian" pyramids. Approximately 80 pyramids were built within the Kingdom of Kush, now located in the modern country of Sudan</p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+               </div>
+               <h4>Price:$2000</h4>
+               <button class =" btn btn-warning ">Book Now</button>
+              <p class="card-text"><small class="text-muted">Last updated 3 hrs ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top"  src=" https://journeyz.co/wp-content/uploads/2019/09/Niagara-Falls-1536x1018.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Niagara waterfalls</h5>
+              <p class="card-text">Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the province of Ontario in Canada and the state of New York in the United States </p>
+              <p class="card-text"></p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+               </div><h4>Price:$3000</h4>
+               <button class =" btn btn-warning ">Book Now</button><p class="footer"><small class="text-muted">Last updated 1 day ago</small></p>
+            </div>
+          </div>
+        </div> <br>
+        <br>
+        <br>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top"  src="https://www.usnews.com/object/image/00000163-8d7e-d398-ad7f-8dfe50a80000/32-sydney-opera-house-getty.jpg?update-time=1527087255721&size=responsive970" alt="">
+            <div class="card-body">
+              <h5 class="card-title">sydney opera house</h5>
+              <p class="card-text"> The Sydney Opera House is a multi-venue performing arts centre in Sydney, New South Wales, Australia. Located on the foreshore of Sydney Harbour, it is widely regarded as one of the world's most famous and distinctive buildings and a masterpiece of 20th-century architecture</p>
+              <p class="card-text"></p>
+             <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+             </div>
+             <h4>Price:$500</h4>
+               <button class =" btn btn-warning ">Book Now</button> 
+           <div class="footer"><small class="text-muted">Last updated 9 mins ago</small></div> </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top"  src="https://www.usnews.com/object/image/00000180-6260-d187-a5cb-fefd67720000/golden-gate-bridge-stock.jpg?update-time=1650917926310&size=responsive970
+            " alt="">
+            <div class="card-body">
+              <h5 class="card-title">Golden Gate Bridge</h5>
+              <p class="card-text">The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California.</p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+               </div><h4>Price:$900</h4>
+               <button class =" btn btn-warning ">Book Now</button>
+              <p class="card-text"><small class="text-muted">Last updated 39 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top"  src=" https://www.usnews.com/object/image/00000163-8d5c-d398-ad7f-8dfc32e60000/11-german-castle-getty.jpg?update-time=1527086344203&size=responsive970
+            " alt="">
+            <div class="card-body">
+              <h5 class="card-title">Neuschwanstein Castle</h5>
+              <p class="card-text">Neuschwanstein Castle is a 19th-century historicist palace on a rugged hill of the foothills of the Alps in the very south of Germany, close to border with Austria. It is located in the Swabia region of Bavaria, in the municipality of Schwangau, above the incorporated village of Hohenschwangau</p>
+              <p class="card-text"></p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+               </div><h4>Price:$650</h4>
+               <button class =" btn btn-warning ">Book Now</button><p class="footer"><small class="text-muted">Last updated 3 days ago</small></p>
+            </div>
+          </div>
+        </div> <br>
+        <br>
+        <br>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top"  src="https://www.usnews.com/object/image/00000163-8d5c-d398-ad7f-8dfc19840000/8-mount-fuji-getty.jpg?update-time=1527086274623&size=responsive970" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Mount fuji</h5>
+              <p class="card-text">Mount Fuji is an active stratovolcano located on the Japanese island of Honshū, with a summit elevation of 3,776.24 m (12,389 ft 3 in). It is the tallest mountain in Japan, the second-highest volcano located on an island in Asia</p>
+             <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+             </div>
+             <h4>Price:$2000</h4>
+               <button class =" btn btn-warning ">Book Now</button> <p class="card-text"><small class="text-muted">Last updated 3 hrs ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top"  src="https://www.usnews.com/object/image/00000163-8d5c-d398-ad7f-8dfc3fa70000/12-ubud-bali-getty.jpg?update-time=1527086376127&size=responsive970" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Bali</h5>
+              <p class="card-text">Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller offshore islands</p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+               </div>
+               <h4>Price:$5000</h4>
+               <button class =" btn btn-warning ">Book Now</button>
+              <p class="card-text"><small class="text-muted">Last updated 120 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top"  src="https://www.usnews.com/object/image/00000163-8d5b-d398-ad7f-8dffaecd0000/14-statue-of-liberty-getty.jpg?update-time=1527087112429&size=responsive970" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Statue of Liberty</h5>
+              <p class="card-text">The Statue of Liberty (Liberty Enlightening the World; French: La Liberté éclairant le monde) is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, United States. </p>
+              <p class="card-text"></p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+               </div>
+               <h4>Price:$300</h4>
+               <button class =" btn btn-warning ">Book Now</button>              <p class="card-text"><small class="text-muted">Last updated 90 mins ago</small></p>
+
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1 class=" text-center "  ><span id="ser">S</span>ervices</h1> <hr class="hr">
+
+        <section id="services">
+          <div class="row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col ">
+              <div class="card h-100 bg-primary">
+                <div class="card-body " >                  <img src="https://en.autgrammarly.com/wp-content/uploads/2022/05/affordable-prices-rubber-stamp-vector-12320512.png">
+
+                  <h3 class="card-title text-center">Affordable Hotel</h3>
+                  <p class="card-text" >           <ul><li>Budget-Friendly</li>
+                  <li>Wider Accessibility</li>
+                <li>Economic Stimulus</li>
+              <li>Reduced Financial Stress</li>
+            <li>Enhanced Quality of Life</li></ul>
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+            <br>
+            <div class="col">
+              <div class="card h-100 bg-success">
+                <div class="card-body ">
+                  <img src="https://flime-restaurante.com/wp-content/uploads/2019/03/Meals-Drinks-960x540.jpg">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <h3 class="card-title text-center">Food & Drinks</h3>
+                  <p class="card-text">       <ul>
+                    <li>Explore delicious cuisines and beverages</li>
+                    <li>International and national varities </li>
+                    <li>vegtarian</li>
+                    <li>non-veg</li>
+                  </ul>
+                    .</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-secondary">
+                <div class="card-body">
+                  <img src="https://th.bing.com/th/id/OIP.IhFtpk35SUQ6tJZz-KkRwwAAAA?rs=1&pid=ImgDetMain">
+                  <br>
+                  <br><br>
+                  <h3 class="card-title text-center">Safety Guide</h3>
+                  <p class="card-text ">     <ul><li>Stay informed about safety measures</li>
+                    <li>24/7 security surveillance</li>
+                   <li> Emergency contact information</li>
+                    First aid kits available</li></ul>
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 bg-danger">
+                <div class="card-body r">
+                  <img src="https://th.bing.com/th/id/OIP.Fwlr0mU4e5hmiOWtaxC2vQHaE8?rs=1&pid=ImgDetMain">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <h3 class="card-title ">transportation</h3>
+                  <p class="card-text">    <ul><li>Better connectivity</li>
+                  <li>bus facility </li>
+                <li> safety measures</li></ul>
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-warning">
+                <div class="card-body ">
+                  <img src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/adventure-hero.jpg?itok=t6iN0gA7">
+              <br><br>
+              <br>
+              <br>   <br> <h3 class="card-title text-center">Adventure Tours</h3>
+                  
+                  
+                  <p class="card-text">      <ul><li>Embark on thrilling outdooradventures led by experienced guides</li><li>Explore nature like never before!</li><li>Explore new variety of adventures</li></ul>                    .</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col primary">
+              <div class="card h-100bg-info">
+                <div class="card-body "><img src="https://activedirections.com/wp-content/uploads/2022/02/Workplace_safety.png" style="width: 90%;height: 290px;">
+                 <br>
+                 <br> <br><br><h3 class="card-title text-center">customer support</h3>
+                  <p class="card-text bg-light "><ul >
+                    <li > 24/7 customer service</li>
+                    <li >resolving complaints</li>
+                    <li >interacting with customers</li>
+                    <li>providing guidence</li><br>
+                  </ul>
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <br>
+        <br>
+        <section class="Gallery"id="Gallery">
+      <h1 class=" text-center " > <span id="ga">G</span>allery </h1> <hr class="hr">
+      <div class="Galleryimages">
+        <img src="https://media.cntraveler.com/photos/598339c5b7a86962e8e27c59/master/w_1920,c_limit/BarnevilleCarteretFrance_GettyImages-544442353.jpg" id="gal">
+        <img src="https://media.cntraveler.com/photos/598339c5d8b70e58cdb15f17/master/w_1920,c_limit/Great_Wall_GettyImages-535657741.jpg"id="gal">
+        <img src="https://media.cntraveler.com/photos/598339cfb7a86962e8e27c5f/master/w_1920,c_limit/Venice_GettyImages-178347018.jpg" id="gal">
+<img src="https://media.cntraveler.com/photos/65de3d0247cc14a38c911c3d/16:9/w_1920%2Cc_limit/Montage%2520Big%2520Sky_MBS%25205%2520-%2520EXTERIORS%2520-%252004%2520-%25200662.jpeg" id="gal">
+<img src="https://media.cntraveler.com/photos/5dee6d7c51da3f00086e5cac/master/w_1920%2Cc_limit/Gstaad-Palace_2019_Gstaad-Palace-Summer-1.jpg" id="gal">
+<img src="https://media.cntraveler.com/photos/5ca602da2741323b2c073c00/master/w_1920,c_limit/Fairmont-Chateau-Whistler__2019_CWR_Summer_Exterior_Brandon-Barre_web.jpg" id="gal">
+
+      </div>
+  
+     
+     
+</section>
+<br>
+<br>
+<div class="jumbotron" id="aboutus-backgroundclr">
+  <h1 class="text-center" id="aboutus"><span>About</span> us</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="https://www.imf.org/-/media/Images/IMF/News/news-article-images/2020/CF-570x312-Tourism-Preto-perola-Getty-Images-iStock-1011241694.ashx" style="padding-bottom: 15px;" class="img-fluid">
+
+    </div><br><div class="col-md-6"> <p1>Founded: ANR Travelo was established in India 2020<br>
+      Nature of Business: ANR Travelo operates in the travel and tourism sector.
+      The exact global employee count is not specified, but ANR Travelo has a presence in India.
+      Headquarters: The company’s headquarters are located in India.
+      ANR Travelo is a travel-related company.<br>
+      Company Email ID: You can reach ANR Travelo via their email address ANRtravelo@gmail.com.
+      Feel free to explore ANR Travelo’s website at travelo.com in for more details about their services and offerings. 🌎✈️</p1><p3> Your gateway to unforgettable journeys! At ANR Travelo, we believe that travel is not just about reaching a destination; it’s about the experiences, the connections, and the memories you create along the way. Whether you’re an intrepid explorer seeking off-the-beaten-path adventures or a leisure traveler looking for relaxation, ANR Travelo has you covered.</p3>
+     <br>
+      <button class="btn-warning" >Readmore...</button>
+     
+    </div>
+  </div>
+</div>
+
+       
+      <footer ><center>
+        <h2 ><span class="end">A</span>NR Travelo</h2><br>
+        <p3  >        Join us on a journey beyond borders, where every step is a story waiting to be told. ANR Travelo – Where memories take flight! 🌍✈️
+        </p3>
+        <br><br><br>
+        <h1> <i class="bi bi-facebook"></i>  <i class="bi bi-whatsapp"> </i><i class="bi bi-twitter-x">  </i> <i class="bi bi-instagram"></i>  <i class="bi bi-threads"></i>  <i class="bi bi-youtube"></i><br></h1>
+
+      <p1 >Designed by ANR </p1>
+      <p> 2024 &copy; ANRtravel.com | All Rights Reserved</p>
+    </center>
+
+      </footer>
+   
+         
+</body>
+</html>
